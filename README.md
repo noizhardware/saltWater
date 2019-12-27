@@ -37,7 +37,7 @@ I'm using the simplest way to do that, without settin up external software, usin
   - use `oscc osc-path-name` to route data from a specific OSC path on that port
   
 ## Data coding system
-In ORCA you need a 5-characters group to send data to saltWater:
+In ORCA you'll need a 5-characters group to send data to saltWater:
 * `osc pathname` [0..z]
 * `octave number` [0..a] (nearly-audible-range)
 * `note number` [0..b] (12 semitones)

@@ -24,7 +24,12 @@ OR, under WINDOWS you can add the `lib` folder path to the registry:
   - ok, now you need to modify the `npath` registry entry, and update it with the new `##` you used before.
   
 There should be a way to do a similar thing also under Linux and/or MacOSX, if you know how, please feel free to edit this file, I'll pull the edit!
+
+## Connecting ORCΛ with puredata
   
 ## Library Elements
-All the elements in this
-* saltGrain
+All the elements in this library start with _"salt"_
+### saltGrain
+  This is the basic building block, it will translate inputs from ORCA into two elements: a MIDI note and an envelope
+* saltSin
+* saltIvory

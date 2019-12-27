@@ -1,6 +1,9 @@
 # saltWater
 #### A library of tiny objects to let ORCΛ swim in a sea of pure data
 
+* ORCΛ is an esoteric programming language, designed to create procedural sequencers - https://100r.co/pages/orca.html
+* puredata is a visual programming language for creating interactive computer music and multimedia works - https://puredata.info/
+
 ## Installing the library
 The easiest way is to copy the files contained in the `lib` folder in your local externals folder.
 That should be here: (from https://puredata.info/docs/faq/how-do-i-install-externals-and-help-files)
@@ -26,10 +29,27 @@ OR, under WINDOWS you can add the `lib` folder path to the registry:
 There should be a way to do a similar thing also under Linux and/or MacOSX, if you know how, please feel free to edit this file, I'll pull the edit!
 
 ## Connecting ORCΛ with puredata
+I'm using the simplest way to do that, without settin up external software, using OSC.
+* in ORCA, `Communication` >> `choose OSC port`, type a port number, 9000 is fine.
+  - keyboard shortcut `Alt+O`
+* in puredata you don't need to set up anything
+  - use `osc-boot portnumber` to start receiving OSC data
+  - use `oscc osc-path-name` to route data from a specific OSC path on that port
+  
+## Data coding system
+In ORCA you need a 5-characters group to send data to saltWater:
+* `osc pathname` [0..z]
+* `octave number` [0..a] (nearly-audible-range)
+* `note number` [0..b] (12 semitones)
+* `attack time` (in msec/10)
+* `release time` (in msec/10)
+All numeric data is in `base 36`, see https://github.com/hundredrabbits/Orca#base36-table
   
 ## Library Elements
 All the elements in this library start with _"salt"_
-### saltGrain
-  This is the basic building block, it will translate inputs from ORCA into two elements: a MIDI note and an envelope
-* saltSin
-* saltIvory
+* **saltGrain**
+  This is the basic building block, it will translate inputs from ORCA into two elements: a standard MIDI note on the left outlet and an envelope on the right outlet.
+* **saltSin**
+  This will directly output a sinewave, according to the received note, and gated with the received AR enevelope data.
+* **saltIvory**
+  super-simple piano synth, with one single overtone

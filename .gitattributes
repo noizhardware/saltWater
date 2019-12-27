@@ -1,5 +1,4 @@
 $ cat .gitattributes
 *.pd linguist-detectable=true
-*.pd linguist-language=puredata
 *.orca linguist-detectable=true
 *.orca linguist-language=ORCA

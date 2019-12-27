@@ -1,2 +1,9 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+$ cat .gitattributes
+
+*.pd linguist-detectable=true
+*.pd linguist-language=puredata
+
+*.orca linguist-detectable=true
+*.orca linguist-language=ORCA

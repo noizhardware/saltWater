@@ -1,8 +1,8 @@
 # saltWater
 #### A library of tiny objects to let ORCΛ swim in a sea of pure data
 
-* ORCΛ is an esoteric programming language, designed to create procedural sequencers - https://100r.co/pages/orca.html
-* puredata is a visual programming language for creating interactive computer music and multimedia works - https://puredata.info/
+* [ORCA](https://100r.co/pages/orca.html) is an esoteric programming language, designed to create procedural sequencers.
+* [puredata](https://puredata.info/) is a visual programming language for creating interactive computer music and multimedia works.
 
 ## Installing the library
 The easiest way is to copy the files contained in the `lib` folder in your local externals folder.

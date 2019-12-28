@@ -26,7 +26,7 @@ OR, under WINDOWS you can add the `lib` folder path to the registry:
   - you should name the new value `path##`, where the `##` is a prograssive number, so it depends on the other paths you have in your registry. The value should be your local path to the `lib` folder in this library.
   - ok, now you need to modify the `npath` registry entry, and update it with the new `##` you used before.
   
-There should be a way to do a similar thing also under Linux and/or MacOSX, if you know how, please feel free to edit this file, I'll pull the edit!
+There should be a way to do a similar thing also under Linux and/or MacOSX, if you know how, please feel free to edit this readme, I'll pull the edit!
 
 ## Connecting ORCΛ with puredata
 I'm using the simplest way to do that, without settin up external software, using OSC.
@@ -49,7 +49,7 @@ All numeric data is in `base 36`, see https://github.com/hundredrabbits/Orca#bas
 ## Library Elements
 All the elements in this library start with _"salt"_
 * **saltGrain**
-  This is the basic building block, it will translate inputs from ORCA into two elements: a standard MIDI note on the left outlet and an envelope on the right outlet.
+  This is the basic building block, translates inputs from ORCA into two elements: a standard MIDI note on the left outlet and an envelope signal on the right outlet.
 * **saltSin**
   This will directly output a sinewave, according to the received note, and gated with the received AR enevelope data.
 * **saltIvory**

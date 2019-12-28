@@ -30,8 +30,10 @@ There should be a way to do a similar thing also under Linux and/or MacOSX, if y
 
 ## Connecting ORCΛ with puredata
 I'm using the simplest way to do that, without settin up external software, using OSC.
+A video version is [here](https://youtu.be/Pv7639QqvhI?t=239).
 * in ORCA, `Communication` >> `choose OSC port`, type a port number, 9000 is fine.
-  - keyboard shortcut `Alt+O`
+  - keyboard shortcut is `Alt+O`
+  - now you can use the `=` glyph to send OSC data out
 * in puredata you don't need to set up anything
   - use `osc-boot portnumber` to start receiving OSC data
   - use `oscc osc-path-name` to route data from a specific OSC path on that port

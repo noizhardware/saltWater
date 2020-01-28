@@ -29,7 +29,7 @@ OR, under WINDOWS you can add the `lib` folder path to the registry:
 There should be a way to do a similar thing also under Linux and/or MacOSX, if you know how, please feel free to edit this readme, I'll pull the edit!
 
 ## Connecting ORCΛ with puredata
-I'm using the simplest way to do that, without settin up external software, using OSC.
+I'm using the simplest way to do that, without setting up external software, using OSC.
 A video version is [here](https://youtu.be/Pv7639QqvhI?t=239).
 * in ORCA, `Communication` >> `choose OSC port`, type a port number, 9000 is fine.
   - keyboard shortcut is `Alt+O`
